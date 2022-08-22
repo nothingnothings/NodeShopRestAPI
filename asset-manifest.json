@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nodeShopRestAPI/static/css/main.22c66778.css",
-    "main.js": "/nodeShopRestAPI/static/js/main.458584be.js",
+    "main.js": "/nodeShopRestAPI/static/js/main.80bef813.js",
     "index.html": "/nodeShopRestAPI/index.html",
     "main.22c66778.css.map": "/nodeShopRestAPI/static/css/main.22c66778.css.map",
-    "main.458584be.js.map": "/nodeShopRestAPI/static/js/main.458584be.js.map"
+    "main.80bef813.js.map": "/nodeShopRestAPI/static/js/main.80bef813.js.map"
   },
   "entrypoints": [
     "static/css/main.22c66778.css",
-    "static/js/main.458584be.js"
+    "static/js/main.80bef813.js"
   ]
 }
