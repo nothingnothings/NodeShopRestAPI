@@ -1,0 +1,41 @@
+input,
+textarea {
+  border-radius: 5px;
+  width: 58%;
+  padding: 0;
+  color: var(--white-highlight);
+  background-color: var(--light-dark);
+  border: 3px solid var(--dark-green);
+}
+
+textarea {
+  resize: none;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+  border: 3px solid var(--dark-green);
+  color: var(--white-highlight);
+}
+
+.invalid {
+  border: 3px solid var(--highlight-danger);
+}
+
+.valid {
+  border: 3px solid var(--lightest-green);
+  background-color: var(--light-dark);
+  color: var(--white-highlight);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px var(--light-dark) inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--light-dark) inset !important;
+  -webkit-text-fill-color: var(--light-grey) !important;
+}

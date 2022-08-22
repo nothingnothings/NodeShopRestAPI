@@ -1,0 +1,153 @@
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-weight: bold;
+  color: var(--white-highlight);
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+  color: var(--highlight-yellow);
+  background: transparent;
+}
+
+.main-header__item a.active {
+  pointer-events: none;
+  background: transparent;
+}
+
+.main-header__item button {
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: var(--white-highlight);
+}
+
+.main-header__item button:focus {
+  border: none;
+  outline: none;
+}
+
+.main-header__item button:hover,
+.main-header__item button:active {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: var(--highlight-yellow);
+}
+
+.mobile-nav__item {
+  color: var(--white-highlight);
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.mobile-nav__item.auth {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.mobile-nav :nth-child(1) {
+  order: 2;
+}
+
+.mobile-nav :nth-child(2) {
+  margin-bottom: 0rem;
+}
+
+.mobile-nav__item.auth .cart-link .cart-link-number {
+  bottom: auto;
+  top: 3rem;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+}
+
+.mobile-nav__item.auth .cart-link:hover,
+.mobile-nav__item.auth .cart-link:active {
+  background-color: transparent;
+  color: var(--highlight-yellow);
+}
+
+.auth:hover {
+  background: none !important;
+}
+
+.mobile-nav__item.auth a:hover {
+  background-color: var(--cyan-green);
+  color: var(--white-highlight);
+}
+
+.cart-link:hover {
+  background: var(--cyan-green);
+  color: var(--white-highlight);
+}
+
+.cart-link.active {
+  background: transparent;
+  color: var(--highlight-yellow);
+}
+.mobile-nav__item:hover {
+  background: var(--cyan-green);
+  color: var(--white-highlight);
+}
+
+.active {
+  background: var(--lightest-green);
+  color: var(--white-highlight);
+  pointer-events: none;
+}
+
+.mobile-nav__item a {
+  text-decoration: none;
+  width: 100%;
+  font-family: 'Lato';
+  color: var(--white-highlight);
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
+  color: var(--white-highlight);
+}
+
+.mobile-nav__item form {
+  width: 100%;
+}
+
+.mobile-nav__item button {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-family: 'Lato';
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  background-color: transparent;
+  color: var(--white-highlight);
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+
+.mobile-nav__item button:hover {
+  background-color: var(--cyan-green);
+}
+
+.mobile-nav__item button:focus {
+  outline: none;
+  border: none;
+}

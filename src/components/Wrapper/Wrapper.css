@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    margin-top: 0.3rem;
+  }
+}

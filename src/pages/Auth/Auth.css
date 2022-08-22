@@ -1,0 +1,90 @@
+body {
+  display: block;
+}
+.login-form {
+  margin: auto;
+  margin-top: 4.5rem;
+  display: block;
+}
+
+.login-form input.blurred {
+  border: 3px solid var(--lightest-green);
+  background-color: var(--light-dark);
+  color: var(--white-highlight);
+}
+
+.login-form input.blurred:invalid {
+  border: 3px solid var(--highlight-danger);
+}
+
+.login-form :nth-child(3) {
+  align-items: flex-start;
+}
+
+.control {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+label {
+  width: 60px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.switch-link {
+  margin-bottom: 1rem;
+  margin-left: 1.6rem;
+}
+
+.command {
+  text-decoration: none;
+  color: var(--lightest-green);
+  font-size: 12px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.command:hover {
+  color: var(--cyan-green);
+}
+
+.switch-link p {
+  text-decoration: none;
+  color: var(--white-highlight);
+  font-size: 10px;
+}
+
+.switch-link a:hover {
+  color: var(--cyan-green);
+}
+
+.button[disabled] {
+  cursor: not-allowed !important;
+  opacity: 0.65;
+  background: var(--light-grey) !important;
+  color: var(--light-dark) !important;
+}
+
+#button {
+  width: 60%;
+  margin-left: 0.7rem;
+}
+
+.dummy-row {
+  height: 4vh;
+}
+
+.dummy-row-2 {
+  height: 11.6vh;
+}
+
+@media (max-width: 420px) {
+  #button {
+    margin-left: 0rem;
+  }
+}

@@ -1,0 +1,159 @@
+.button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--dark-green);
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: var(--white-highlight);
+  cursor: pointer;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  line-height: 40px;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.btn.danger {
+  height: auto;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Ubuntu, sans-serif;
+  color: var(--white-highlight);
+  padding: 8px 15px;
+  margin-bottom: 0px;
+  background-color: var(--dark-green);
+}
+
+.btn.danger:focus {
+  outline: 0;
+  border: 0;
+  background-color: var(--dark-green);
+}
+
+.btn.danger:hover,
+.btn.danger:active {
+  background-color: var(--highlight-danger);
+  text-decoration: none;
+  color: var(--white-highlight);
+  border: none;
+}
+
+.button.danger {
+  color: var(--highlight-danger);
+  border-color: var(--highlight-danger);
+}
+
+.button.danger:hover,
+.button.danger:active {
+  background: var(--highlight-danger);
+  color: var(--white-highlight);
+}
+
+.button:hover,
+.button:active {
+  color: var(--highlight-yellow);
+  background-color: var(--cyan-green);
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+@media (max-width: 279px) {
+  .button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 237px) {
+  .button {
+    font-size: 0.6rem;
+    padding: 1px;
+  }
+}
+
+@media (max-width: 185px) {
+  .button {
+    padding: 0;
+  }
+}
+
+.admin-button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--dark-green);
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: var(--white-highlight);
+  cursor: pointer;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  margin-top: 0.3rem;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  line-height: 40px;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.admin-button.danger {
+  color: var(--highlight-danger);
+  border-color: var(--highlight-danger);
+}
+
+.admin-button.danger:hover,
+.admin-button.danger:active {
+  background: var(--highlight-danger);
+  color: var(--white-highlight);
+}
+
+.admin-button:hover,
+.admin-button:active {
+  color: var(--highlight-yellow);
+  background-color: var(--cyan-green);
+}
+
+.admin-button:disabled {
+  cursor: default;
+}
+
+@media (max-width: 279px) {
+  .admin-button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 237px) {
+  .admin-button {
+    font-size: 0.6rem;
+    padding: 1px;
+  }
+}
+
+@media (max-width: 185px) {
+  .admin-button {
+    padding: 0;
+  }
+}

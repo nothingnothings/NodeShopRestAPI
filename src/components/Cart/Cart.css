@@ -1,0 +1,13 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  cursor: default;
+}
+
+.cart h2 {
+  font-family: 'Lato';
+  color: var(--white-highlight);
+}

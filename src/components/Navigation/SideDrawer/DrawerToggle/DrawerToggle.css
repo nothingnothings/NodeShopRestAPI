@@ -1,0 +1,24 @@
+#side-menu-toggle {
+  border: none;
+  background: transparent;
+  color: var(--white-highlight);
+  cursor: pointer;
+  width: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--white-highlight);
+  display: block;
+  margin: 0.6rem 0;
+}
+
+@media (min-width: 769px) {
+  #side-menu-toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+.main-header {
+  padding: 0.3rem;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--light-green);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.main-header__nav {
+  height: 100%;
+  width: 96vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-link-2 {
+  color: var(--white-highlight);
+  margin-left: 1rem;
+}
+
+.shop-link-2:hover,
+.shop-link-2.active {
+  color: var(--highlight-yellow);
+  background: transparent;
+}
+
+@media (min-width: 769px) {
+  .shop-link-2 {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.cart__item-list {
+  animation: pop-up 0.5s ease-in;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.8rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cart__item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+  }
+}

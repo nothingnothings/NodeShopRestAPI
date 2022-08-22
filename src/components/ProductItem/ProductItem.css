@@ -1,0 +1,16 @@
+.product__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  animation: fade-in 0.65s ease-in;
+}
+
+@media (min-width: 1800px) {
+  .product__item {
+    margin: 0 7rem;
+    height: 50%;
+    max-width: 18%;
+  }
+}

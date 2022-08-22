@@ -1,0 +1,28 @@
+.no-product {
+  background-color: var(--white-highlight);
+  min-height: 25vh;
+  width: 22.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  cursor: default;
+  padding: 1rem;
+}
+
+.no-product.cart-item {
+  color: var(--white-highlight);
+  display: flex;
+  background-color: var(--light-dark);
+  text-align: center;
+  align-items: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: scale(1.03, 1.03);
+  font-family: 'Lato' !important;
+}
+
+@media (max-width: 420px) {
+  .no-product {
+    min-height: 17.5vh;
+    width: 15rem;
+  }
+}

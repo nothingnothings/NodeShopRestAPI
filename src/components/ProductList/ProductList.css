@@ -1,0 +1,49 @@
+.product__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1800px) {
+  .product__list {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .product__list {
+    gap: 1.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product__list {
+    gap: 24rem;
+    flex-direction: column;
+  }
+}
+
+@keyframes loading-dots {
+  0%,
+  20% {
+    content: '';
+  }
+
+  20% {
+    content: '.';
+  }
+
+  40% {
+    content: '..';
+  }
+
+  60% {
+    content: '...';
+  }
+
+  80%,
+  100% {
+    content: '';
+  }
+}

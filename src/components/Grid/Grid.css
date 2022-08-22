@@ -1,0 +1,42 @@
+.grid {
+  margin-top: 6rem;
+  margin-bottom: 20rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid.landing {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.grid.edit {
+  display: flex;
+}
+
+@media (min-width: 1800px) {
+  .grid {
+    gap: 0;
+    display: block;
+  }
+}
+
+@media (max-height: 1025px) {
+  .grid {
+    margin-bottom: 22rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid.landing {
+    margin-bottom: 12rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .grid.landing {
+    margin-bottom: 7rem;
+  }
+}

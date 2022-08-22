@@ -1,0 +1,60 @@
+.cart-results {
+  background-color: var(--light-dark);
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  margin-right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkest);
+  outline: 3px solid var(--lightest-green);
+  height: 10rem;
+  width: 25rem;
+}
+
+.stripe-button-el {
+  background-image: linear-gradient(
+    var(--lightest-green),
+    var(--dark-green)
+  ) !important;
+
+  margin-top: 0.5rem;
+  display: block;
+  min-height: 30px;
+  border-radius: 4px;
+}
+
+.stripe-button-el:hover {
+  background: var(--lightest-green) !important;
+}
+
+.stripe-button-el button {
+  overflow: hidden;
+  display: inline-block;
+  visibility: visible !important;
+  border: 0;
+  padding: 1px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 20%);
+  background-color: linear-gradient(
+    var(--lightest-green),
+    var(--dark-green)
+  ) !important;
+}
+
+.stripe-button-el button span {
+  padding: 0 12px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--white-highlight);
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  line-height: 30px;
+  height: 30px;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
