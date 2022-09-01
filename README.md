@@ -2,7 +2,7 @@
 
 # NodeShop
 
-The REST API frontend of a simple example of an online shop powered by Node.js, ReactJS and MongoDB. The shop's appearance was inspired by Node.js's [logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg).
+The REST API frontend of a simple example of an online shop powered by Node.js, ReactJS and MongoDB. The shop's appearance was inspired by Node.js's [logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). The webapp can be accessed [here](example@example.com).
 
 ## Technologies
 
