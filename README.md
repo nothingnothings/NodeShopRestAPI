@@ -1,4 +1,4 @@
-![Logo](/logo512.png)
+![Logo](/logo192.png)
 
 # NodeShop
 
