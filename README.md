@@ -35,3 +35,5 @@ To run this project, install it locally using npm and Git:
 ## Inspiration
 
 This app was based on the "NodeJS - The Complete Guide(MVC, REST APIs, GraphQL, Deno)" course by Maximilian Schwarzmüller.
+
+![Logo](/logo512.png)
