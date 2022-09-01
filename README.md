@@ -27,7 +27,7 @@ To run this project, install it locally using npm and Git:
 
 - SVG line animation using pure CSS
 - Form validation logic in the "Get Started" page
-- Login functionality (a single user was created in the database; the signup endpoint on the backend was disabled for this example app)
+- Login functionality (a single user was created in the database; as for the "create account" endpoint on the backend, it was disabled for this example app)
 - Working shopping cart functionality (using React Redux)
 - Responsive mobile design (media queries, animated sidebar, header)
 - Storage of User, Product, Cart and Order objects in MongoDB database
