@@ -38,6 +38,7 @@
 
 @media (max-width: 250px) {
   .grid.landing {
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
+    margin-top: -10rem;
   }
 }
