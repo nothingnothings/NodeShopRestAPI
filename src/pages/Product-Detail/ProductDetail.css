@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.product-detail__description {
+  text-align: center;
+}
+
 .product-detail__highlight {
   cursor: default;
   display: flex;

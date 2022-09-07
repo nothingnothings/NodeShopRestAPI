@@ -63,7 +63,7 @@ const ProductDetail = (props) => {
             imageUrl={`/${productDetail.imageUrl}`}
             title={productDetail.title}
           ></Hexagon>
-          <h3>{productDetail.description}</h3>
+          <h3 className="product-detail__description">{productDetail.description}</h3>
         </div>
         <div className="orders__item centered">
           <div className="orders__item-lines product-detail">
