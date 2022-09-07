@@ -68,7 +68,7 @@ const ProductDetail = (props) => {
         <div className="orders__item centered">
           <div className="orders__item-lines product-detail">
             <h2>US$ {productDetail.price}</h2>
-            {addToCartButton}ð
+            {addToCartButton}
           </div>
         </div>
       </div>
