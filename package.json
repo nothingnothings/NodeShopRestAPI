@@ -2,7 +2,7 @@
   "name": "node-shop-rest-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nothingnothings.github.io",
+  "homepage": "https://nothingnothings.github.io/NodeShopRestAPI/",
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
