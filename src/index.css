@@ -12,9 +12,6 @@
   --highlight-yellow: #ffeb3b;
   --highlight-light-danger: #ffb0b0;
   --highlight-danger: #ff0000;
-/* BootStrap override */
-  --bs-font-sans-serif: none;
-
 }
 
 #root {
@@ -29,13 +26,12 @@
 }
 
 html {
-  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif !important;
 }
 
 html,
 body {
   height: 100%;
-
 }
 
 body {
@@ -44,7 +40,6 @@ body {
   background: var(--light-dark) !important;
   color: var(--white-highlight) !important;
   box-sizing: border-box !important;
-
 }
 
 /* Opera Fix */
