@@ -51,7 +51,7 @@ const App = (props) => {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/NodeShopRestAPI">
       <div>
         <Layout>
           <Suspense fallback={Spinner}>{routes}</Suspense>
