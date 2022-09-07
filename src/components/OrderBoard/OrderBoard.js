@@ -54,21 +54,24 @@ const OrderBoard = (props) => {
 
     orders = (
       <Orders>
-        {actualOrderList.map((order) => {
-          if (order !== 'orders') {
-            return (
-              <OrdersItem
-                key={order._id}
-                orderId={order._id}
-                orderKey={order._id}
-                orderProducts={order.products}
-                orderPrice={order.totalPrice}
-                token={props.token}
-                userId={props.userId}
-              ></OrdersItem>
-            );
-          }
-        })}
+        {
+          // eslint-disable-next-line array-callback-return
+          actualOrderList.map((order) => {
+            if (order !== 'orders') {
+              return (
+                <OrdersItem
+                  key={order._id}
+                  orderId={order._id}
+                  orderKey={order._id}
+                  orderProducts={order.products}
+                  orderPrice={order.totalPrice}
+                  token={props.token}
+                  userId={props.userId}
+                ></OrdersItem>
+              );
+            }
+          })
+        }
       </Orders>
     );
   }

@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-
-
 import * as shopActionTypes from '../../store/actions/shop';
 import * as cartActionTypes from '../../store/actions/cart';
 
@@ -30,8 +28,10 @@ const ProductList = (props) => {
   };
 
   if (!props.loading) {
+    // eslint-disable-next-line array-callback-return
     productList = Object.entries(props.products).map((product, index) => {
       if (index === 0) {
+        // eslint-disable-next-line array-callback-return
         return Object.entries(product[1]).map((innerProduct) => {
           if (innerProduct[0] === 'value') {
             return innerProduct[1].map((actualProduct) => {
