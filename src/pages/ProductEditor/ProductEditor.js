@@ -99,7 +99,7 @@ const ProductEditor = (props) => {
           imageUrl={
             controls.image.value !== ''
               ? controls.image.value
-              : '/NodeShopBlack.png'
+              : '/public/NodeShopBlack.png'
           }
         ></ProductItem>
       </Grid>
