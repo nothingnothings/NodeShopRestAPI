@@ -70,7 +70,7 @@ const Footer = () => {
         <Row>
           <Col md={8} sm={6} xs={12}>
             <p className="copyright-text baseline">
-              &copy; Site developed in 2021 by <a href="#dummy">Arthur Panazolo</a>
+              &copy; Site developed in 2021 by <a href="https://github.com/nothingnothings">Arthur Panazolo</a>
             </p>
           </Col>
 
