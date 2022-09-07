@@ -12,6 +12,9 @@
   --highlight-yellow: #ffeb3b;
   --highlight-light-danger: #ffb0b0;
   --highlight-danger: #ff0000;
+/* BootStrap override */
+  --bs-font-sans-serif: none;
+
 }
 
 #root {
