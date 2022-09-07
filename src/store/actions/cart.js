@@ -112,7 +112,7 @@ export const addToCartFail = (error) => {
   };
 };
 
-export const asyncAddToCartStart = (token, userId, productId, cb) => {
+export const asyncAddToCartStart = (token, userId, productId, _cb) => {
   return (dispatch) => {
     dispatch(addToCartStart());
 
