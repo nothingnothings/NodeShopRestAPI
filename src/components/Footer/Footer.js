@@ -39,7 +39,7 @@ const Footer = () => {
                 <a href="https://www.mongodb.com/docs/">MongoDB</a>
               </li>
               <li>
-                <a href="https://ejs.co/">EJS</a>
+                <a href="https://axios-http.com/">Axios</a>
               </li>
             </ul>
           </Col>
@@ -47,19 +47,19 @@ const Footer = () => {
             <h6>Contact Us</h6>
             <ul className="footer-links">
               <li>
-                <a href="#dummy">About the Company</a>
+                <a href="https://github.com/nothingnothings/NodeShopRestAPI">About the Company</a>
               </li>
               <li>
-                <a href="#dummy">Privacy Policy</a>
+                <a href="https://github.com/nothingnothings/NodeShopRestAPI">Privacy Policy</a>
               </li>
               <li>
-                <a href="#dummy">Rate our Services</a>
+                <a href="https://github.com/nothingnothings/NodeShopRestAPI">Rate our Services</a>
               </li>
               <li>
-                <a href="#dummy">Our Partners</a>
+                <a href="https://github.com/nothingnothings/NodeShopRestAPI">Our Partners</a>
               </li>
               <li>
-                <a href="#dummy">Work for Us</a>
+                <a href="https://github.com/nothingnothings/NodeShopRestAPI">Work for Us</a>
               </li>
             </ul>
           </Col>
@@ -87,7 +87,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="linkedin" href="https://linkedin.com/">
+                <a className="linkedin" href="https://linkedin.com/in/arthur-dalla-corte-panazolo">
                   <i className="fa fa-linkedin"></i>
                 </a>
               </li>
