@@ -25,9 +25,14 @@
   clear: both;
 }
 
+html {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif
+}
+
 html,
 body {
   height: 100%;
+
 }
 
 body {
@@ -36,7 +41,7 @@ body {
   background: var(--light-dark) !important;
   color: var(--white-highlight) !important;
   box-sizing: border-box !important;
-  font-family: 'Merriweather' !important;
+
 }
 
 /* Opera Fix */
