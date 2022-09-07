@@ -28,6 +28,7 @@ const ProductDetail = (props) => {
       .then((product) => {
         setProductDetail(product);
       });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let addToCartButton = (

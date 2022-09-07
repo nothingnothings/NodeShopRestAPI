@@ -23,6 +23,7 @@ const Checkout = (props) => {
     if (currentUser) {
       props.onFetchCart(props.token, props.userId);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   let cart = <Spinner></Spinner>;

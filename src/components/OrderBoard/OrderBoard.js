@@ -22,6 +22,7 @@ const OrderBoard = (props) => {
       props.onFetchOrders(props.token, props.userId);
       props.onFetchCart(props.token, props.userId);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   let orders = <Spinner></Spinner>;

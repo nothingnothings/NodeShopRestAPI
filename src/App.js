@@ -20,6 +20,7 @@ import ProductDetail from './pages/Product-Detail/ProductDetail';
 const App = (props) => {
   useEffect(() => {
     props.onTryAutoSignIn();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let routes = (

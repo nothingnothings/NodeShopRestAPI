@@ -19,6 +19,7 @@ const ProductList = (props) => {
 
   useEffect(() => {
     props.onFetchProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let productList = <Spinner></Spinner>;

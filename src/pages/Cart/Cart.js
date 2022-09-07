@@ -21,6 +21,7 @@ const CartPage = (props) => {
     if (currentUser) {
       props.onFetchCart(props.token, props.userId);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   const onRemoveProduct = (product) => {
