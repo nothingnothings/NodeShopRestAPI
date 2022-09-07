@@ -27,6 +27,7 @@
 
 html {
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif !important;
+  --bs-font-sans-serif: 'Merriweather', Georgia, 'Times New Roman', Times, serif !important;
 }
 
 html,
