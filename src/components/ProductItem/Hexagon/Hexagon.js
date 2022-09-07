@@ -6,7 +6,7 @@ const Hexagon = (props) => {
   return (
     <div className="hexagon">
       <div className="hexagon image">
-        <img src={props.imageUrl} alt={props.title}></img>
+        <img src={`public/${props.imageUrl}`} alt={props.title}></img>
       </div>
     </div>
   );
