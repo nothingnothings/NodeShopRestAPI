@@ -10,6 +10,14 @@
   gap: 0.5rem;
 }
 
+
+
+@media (max-width: 400px) {
+  .cart__item-list {
+    margin-bottom: 10rem;
+  }
+}
+
 @media (min-width: 768px) {
   .cart__item-list {
     display: flex;
@@ -21,3 +29,4 @@
     width: 100%;
   }
 }
+
