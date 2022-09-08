@@ -20,7 +20,7 @@ The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, a
  - Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
  - Responsive mobile design (sidebar, Flexbox, media queries)
  - Font Awesome
- - Axios (for the communication, requests and responses, with the Node.js/express.js backend)
+ - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
  
  
  
