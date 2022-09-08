@@ -69,3 +69,10 @@
     width: 3rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  .cart-link-number {
+    color: var(--dark-green);
+  }
+}
