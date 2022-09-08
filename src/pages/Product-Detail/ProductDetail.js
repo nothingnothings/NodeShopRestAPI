@@ -60,7 +60,7 @@ const ProductDetail = (props) => {
         <div className="product-detail__highlight">
           <h1>{productDetail.title}</h1>
           <Hexagon
-            imageUrl={productDetail.imageUrl}
+            imageUrl={`../${productDetail.imageUrl}`}
             title={productDetail.title}
           ></Hexagon>
           <h3 className="product-detail__description">{productDetail.description}</h3>
