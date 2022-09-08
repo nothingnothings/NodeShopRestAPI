@@ -1,71 +1,343 @@
-# Getting Started with Create React App
+![NodeShop](/src/assets/images/ArtGarage.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NodeShop - REST API Version
 
-## Available Scripts
+Frontend App built with the ReactJS (create-react-app) library. The site's design, hexagon-inspired, was based on [Node.js's logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). Flexbox and media queries were used for the responsive design (attempting to cater to multiple device types, both desktop and mobile, with different resolutions). As per React's latest versions, the app was made out of functional components, moving away from the class-based ("`class App extends React.Component{}`") component approach used in the past.
 
-In the project directory, you can run:
+The App was bootstrapped with Create React App and deployed with `gh-pages`, assisted by the GitHub Actions feature. It can be accessed [here](https://nothingnothings.github.io/NodeShopRestAPI/).
+ 
+## Technologies 
+ 
+ Some of the Languages and Libraries employed:
+ 
+ 
+ 
+ 
+## Project Directory Structure
 
-### `npm start`
+The development environment (with the use of the `create-react-app` tool/workflow):
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
 
-### `npm test`
+.\
+│
+├── public\
+│   │
+│   ├── images\
+│   │   ├── 1658431838529-Bike.png
+│   │   ├── 1658432590831-Boat.png
+│   │   ├── 1658433107407-Pencil.png
+│   │   ├── 1658433305838-Skateboard.png
+│   │   ├── 1658433495040-keyboard.png
+│   │   ├── 1658434189280-A set of tires.png
+│   │   ├── 1658434649972-Boomerang.png
+│   │   ├── 1658435067043-Drums.png
+│   │   └── 1658435608982-Violin.png
+│   │
+│   ├── 404.html
+│   ├── NodeShopBlack.png
+│   ├── apple-touch-icon.png
+│   ├── browserconfig.xml
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── mstile-150x150.png
+│   └── site.webmanifest
+│
+├── src\
+│   │
+│   ├── components\
+│   │   │
+│   │   ├── Backdrop\
+│   │   │   ├── Backdrop.css
+│   │   │   └── Backdrop.js
+│   │   │
+│   │   ├── Cart\
+│   │   │   │
+│   │   │   ├── CartItemList\
+│   │   │   │   │
+│   │   │   │   ├── CartItem\
+│   │   │   │   │   ├── CartItem.css
+│   │   │   │   │   └── CartItem.js
+│   │   │   │   │
+│   │   │   │   ├── CartItemList.css
+│   │   │   │   └── CartItemList.js
+│   │   │   │
+│   │   │   ├── NoProduct\
+│   │   │   │   ├── NoProduct.css
+│   │   │   │   └── NoProduct.js
+│   │   │   │
+│   │   │   ├── Cart.css
+│   │   │   └── Cart.js
+│   │   │
+│   │   ├── Footer\
+│   │   │   ├── Footer.css
+│   │   │   └── Footer.js
+│   │   │
+│   │   ├── Grid\
+│   │   │   ├── Grid.css
+│   │   │   └── Grid.js
+│   │   │
+│   │   ├── Navigation\
+│   │   │   │
+│   │   │   ├── MainNavigation\
+│   │   │   │   ├── MainNavigation.css
+│   │   │   │   └── MainNavigation.js
+│   │   │   │
+│   │   │   ├── MobileNavigation\
+│   │   │   │   ├── MobileNavigation.css
+│   │   │   │   └── MobileNavigation.js
+│   │   │   │
+│   │   │   ├── NavigationItems\
+│   │   │   │   │
+│   │   │   │   ├── NavigationItem\
+│   │   │   │   │   ├── NavigationItem.css
+│   │   │   │   │   └── NavigationItem.js
+│   │   │   │   │
+│   │   │   │   ├── NavigationItems.css
+│   │   │   │   └── NavigationItems.js
+│   │   │   │
+│   │   │   └── SideDrawer\
+│   │   │       │
+│   │   │       └── DrawerToggle\
+│   │   │           ├── DrawerToggle.css
+│   │   │           └── DrawerToggle.js
+│   │   │
+│   │   │
+│   │   │
+│   │   ├── OrderBoard\
+│   │   │   │
+│   │   │   ├── Orders\
+│   │   │   │   │
+│   │   │   │   ├── OrdersItem\
+│   │   │   │   │   ├── OrdersItem.css
+│   │   │   │   │   └── OrdersItem.js
+│   │   │   │   │
+│   │   │   │   ├── Orders.css
+│   │   │   │   └── Orders.js
+│   │   │   │
+│   │   │   ├── OrderBoard.css
+│   │   │   └── OrderBoard.js
+│   │   │
+│   │   ├── Pagination\
+│   │   │   ├── Pagination.css
+│   │   │   └── Pagination.js
+│   │   │
+│   │   ├── ProductItem\
+│   │   │   │
+│   │   │   ├── Hexagon\
+│   │   │   │   ├── Hexagon.css
+│   │   │   │   └── Hexagon.js
+│   │   │   │
+│   │   │   ├── ProductBox\
+│   │   │   │   ├── ProductBox.css
+│   │   │   │   └── ProductBox.js
+│   │   │   │
+│   │   │   ├── ProductItem.css
+│   │   │   └── ProductItem.js
+│   │   │
+│   │   ├── ProductList\
+│   │   │   ├── ProductList.css
+│   │   │   └── ProductList.js
+│   │   │
+│   │   ├── Toolbar\
+│   │   │   ├── Toolbar.css
+│   │   │   └── Toolbar.js
+│   │   │
+│   │   ├── UI\
+│   │   │   │
+│   │   │   ├── Button\
+│   │   │   │   ├── Button.css
+│   │   │   │   └── Button.js
+│   │   │   │
+│   │   │   ├── Input\
+│   │   │   │   ├── Input.css
+│   │   │   │   └── Input.js
+│   │   │   │
+│   │   │   └── Spinner\
+│   │   │       ├── Spinner.css
+│   │   │       └── Spinner.js
+│   │   │
+│   │   │
+│   │   └── Wrapper\
+│   │       ├── Wrapper.css
+│   │       └── Wrapper.js
+│   │
+│   │
+│   ├── hoc\
+│   │   │
+│   │   ├── Auxiliary\
+│   │   │   └── Auxiliary.js
+│   │   │
+│   │   ├── Layout\
+│   │   │   ├── Layout.css
+│   │   │   └── Layout.js
+│   │   │
+│   │   └── ScrollToTop\
+│   │       └── ScrollToTop.js
+│   │
+│   │
+│   ├── pages\
+│   │   │
+│   │   ├── Admin-Shop\
+│   │   │   ├── Admin-Shop.css
+│   │   │   └── AdminShop.js
+│   │   │
+│   │   ├── Auth\
+│   │   │   │
+│   │   │   ├── Logout\
+│   │   │   │   └── Logout.js
+│   │   │   │
+│   │   │   ├── Auth.css
+│   │   │   └── Auth.js
+│   │   │
+│   │   ├── Cart\
+│   │   │   ├── Cart.css
+│   │   │   └── Cart.js
+│   │   │
+│   │   ├── Checkout\
+│   │   │   ├── Checkout.css
+│   │   │   └── Checkout.js
+│   │   │
+│   │   ├── Landing-Page\
+│   │   │   ├── Landing-Page.css
+│   │   │   └── Landing-Page.js
+│   │   │
+│   │   ├── Orders\
+│   │   │   ├── Orders.css
+│   │   │   └── Orders.js
+│   │   │
+│   │   ├── Product-Detail\
+│   │   │   ├── ProductDetail.css
+│   │   │   └── ProductDetail.js
+│   │   │
+│   │   ├── ProductEditor\
+│   │   │   ├── ProductEditor.css
+│   │   │   └── ProductEditor.js
+│   │   │
+│   │   └── Shop\
+│   │       ├── Shop.css
+│   │       └── Shop.js
+│   │
+│   │
+│   ├── shared\
+│   │   └── util.js
+│   │
+│   ├── store\
+│   │   │
+│   │   ├── actions\
+│   │   │   ├── auth.js
+│   │   │   ├── authActionTypes.js
+│   │   │   ├── cart.js
+│   │   │   ├── cartActionTypes.js
+│   │   │   ├── order.js
+│   │   │   ├── orderActionTypes.js
+│   │   │   ├── shop.js
+│   │   │   └── shopActionTypes.js
+│   │   │
+│   │   └── reducers\
+│   │       ├── authReducer.js
+│   │       ├── cartReducer.js
+│   │       ├── orderReducer.js
+│   │       └── shopReducer.js
+│   │
+│   │
+│   ├── App.js
+│   ├── axios-orders.js
+│   ├── index.css
+│   └── index.js
+│
+├── .gitignore
+├── README.md
+├── package-lock.json
+└── package.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+The `create-react-app` workflow's production output, as shown in the gh-pages branch (tasked with the deployment of the app):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+.\
+│
+├── images\
+│   ├── 1658431838529-Bike.png
+│   ├── 1658432590831-Boat.png
+│   ├── 1658433107407-Pencil.png
+│   ├── 1658433305838-Skateboard.png
+│   ├── 1658433495040-keyboard.png
+│   ├── 1658434189280-A set of tires.png
+│   ├── 1658434649972-Boomerang.png
+│   ├── 1658435067043-Drums.png
+│   └── 1658435608982-Violin.png
+│
+├── static\
+│   │
+│   ├── css\
+│   │   ├── main.fa8e2a93.css
+│   │   └── main.fa8e2a93.css.map
+│   │
+│   └── js\
+│       ├── main.4e33800d.js
+│       ├── main.4e33800d.js.LICENSE.txt
+│       └── main.4e33800d.js.map
+│
+├── .nojekyll
+├── 404.html
+├── NodeShopBlack.png
+├── apple-touch-icon.png
+├── asset-manifest.json
+├── browserconfig.xml
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── favicon.ico
+├── index.html
+├── logo192.png
+├── logo512.png
+├── manifest.json
+├── mstile-150x150.png
+└── site.webmanifest
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Configuration Files (package.json)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The package.json file used in the project:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Setup 
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To use this project, clone it using Git:
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# NodeShopRestAPI" 
+
+
+
+## Features 
+
+
+
+
+# Inspiration
+
+This app was based on the 
