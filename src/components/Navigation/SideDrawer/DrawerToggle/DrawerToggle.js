@@ -11,7 +11,7 @@ const DrawerToggle = (props) => {
       isEnabled={true}
     >
       <span className="toggle-button__bar"></span>
-      <span className="toggle-button__bar"></span>
+      <span className="toggle-button__bar" style={{height: '0.21rem'}}></span>
       <span className="toggle-button__bar"></span>
     </Button>
   );
