@@ -19,13 +19,13 @@
 }
 
 .shop-link-2 {
-  color: var(--white-highlight);
+  color: var(--black-highlight);
   margin-left: 1rem;
 }
 
 .shop-link-2:hover,
 .shop-link-2.active {
-  color: var(--highlight-yellow);
+  color: var(--cyan-green);
   background: transparent;
 }
 
