@@ -2,7 +2,7 @@
 
 # NodeShop - REST API Version
 
-Frontend App built with the ReactJS (create-react-app) library. The site's design, hexagon-inspired, was based on [Node.js's logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). Flexbox and media queries were used for the responsive design (attempting to cater to multiple device types, both desktop and mobile, with different resolutions). As per React's latest versions, the app was made out of functional components, moving away from the class-based ("`class App extends React.Component{}`") component approach used in the past.
+Frontend Single Page Application (SPA) built with the ReactJS (create-react-app) library. The site's design, hexagon-inspired, was based on [Node.js's logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). Flexbox and media queries were used for the responsive design (attempting to cater to multiple device types, both desktop and mobile, with different resolutions). As per React's latest versions, the app was made out of functional components, moving away from the class-based ("`class App extends React.Component{}`") component approach used in the past.
 
 The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, assisted by the GitHub Actions feature. It can be accessed [here](https://nothingnothings.github.io/NodeShopRestAPI/).
  
@@ -10,6 +10,17 @@ The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, a
  
  Some of the Languages and Libraries employed:
  
+ - Node Package Manager (for bootstrapping and managing the React App)
+ - HTML5 
+ - CSS3 (animations, Flexbox, media queries)
+ - ReactJS (JavaScript Library, app built entirely of React components)
+ - React-Router-DOM (for the navigation between the different "pages" of the app)
+ - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
+ - BootStrap (mainly for parts of the Footer component)
+ - Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
+ - Responsive mobile design (sidebar, Flexbox, media queries)
+ - Font Awesome
+ - Axios (for the communication, requests and responses, with the Node.js/express.js backend)
  
  
  
@@ -312,14 +323,63 @@ The `create-react-app` workflow's production output, as shown in the gh-pages br
 The package.json file used in the project:
 
 ```
-
-
-
-
-
-
-
-
+{
+  "name": "node-shop-rest-api",
+  "version": "0.2.0",
+  "private": true,
+  "homepage": "https://nothingnothings.github.io/NodeShopRestAPI",
+  "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react-fontawesome": "^1.6.5",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "font-awesome": "^4.7.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "gh-pages": "^4.0.0"
+  }
+}
 ```
 
 
