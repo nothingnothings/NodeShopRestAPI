@@ -80,7 +80,7 @@
 .mobile-nav__item.auth .cart-link:hover,
 .mobile-nav__item.auth .cart-link:active {
   background-color: transparent;
-  color: var(--highlight-yellow);
+  color: var(--lightest-green);
 }
 
 .auth:hover {
@@ -99,7 +99,8 @@
 
 .cart-link.active {
   background: transparent;
-  color: var(--highlight-yellow);
+  /* color: var(--highlight-yellow); */
+  color: var(--lightest-green);
 }
 .mobile-nav__item:hover {
   background: var(--cyan-green);
