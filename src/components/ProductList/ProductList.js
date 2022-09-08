@@ -59,7 +59,6 @@ const ProductList = (props) => {
   return (
     <React.Fragment>
       <div className="product__list">{productList}</div>
-      {/* {redirectToCart} */}
     </React.Fragment>
   );
 };

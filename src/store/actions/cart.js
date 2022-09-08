@@ -131,7 +131,6 @@ export const asyncAddToCartStart = (token, userId, productId, _cb) => {
         }
       )
       .then((res) => {
-        console.log(res.data.cart);
         dispatch(
           addToCartSuccess({
             products: res.data.cart.products,

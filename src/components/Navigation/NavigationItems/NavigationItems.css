@@ -60,8 +60,8 @@
 
 #path314:active,
 #path314:hover {
-  stroke: var(--highlight-yellow);
-  fill: var(--highlight-yellow);
+  stroke: var(--cyan-green);
+  fill: var(--cyan-green);
 }
 
 @media (max-width: 158px) {

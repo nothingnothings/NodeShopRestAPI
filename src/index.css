@@ -1,10 +1,12 @@
 :root {
   --lightest-green: #5ccc11;
+  --logo-green: #74c81b;
   --light-green: #098824;
   --cyanest-green: #0ddbc3;
   --cyan-green: #00695c;
   --dark-green: #045603;
   --white-highlight: #ffffff;
+  --black-highlight: #171717;
   --light-grey: #c3c3c3;
   --grey-grey: #696969;
   --light-dark: #292522;
