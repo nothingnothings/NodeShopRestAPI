@@ -23,6 +23,7 @@
 @media (max-width: 420px) {
   .no-product {
     min-height: 17.5vh;
+    /* width: 15rem; */
     width: 15rem;
   }
 }
