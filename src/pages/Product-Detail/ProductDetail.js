@@ -32,7 +32,7 @@ const ProductDetail = (props) => {
   }, []);
 
   let addToCartButton = (
-    <NavLink className="button" to="/auth">
+    <NavLink className="button" to="/auth" style={{textDecoration: 'none'}}>
       Add to Cart
     </NavLink>
   );
