@@ -190,8 +190,25 @@
   }
 }
 
+
+
+
 @media (min-width: 1800px) {
   .receptacle {
-    margin-top: 17rem;
+    margin-top: 12rem;
+  }
+}
+
+
+
+@media (max-height: 700px) {
+  .receptacle {
+    margin-top: 10rem;
+    margin-bottom: 16rem;
+  }
+
+  .loading-text {
+    position: relative;
+    bottom: 16rem;
   }
 }

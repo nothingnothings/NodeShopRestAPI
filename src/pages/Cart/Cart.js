@@ -32,41 +32,41 @@ const CartPage = (props) => {
 
   let cart = <Spinner></Spinner>;
 
-  if (!props.loading && props.cart.products.length === 0) {
-    cart = (
-      <Wrapper>
-        <CartItemList>
-          <NoProduct>
-            <li className="no-product cart-item">
-              <h2>There are no products in your Cart.</h2>
-            </li>
-          </NoProduct>
-        </CartItemList>
-      </Wrapper>
-    );
-  }
+  // if (!props.loading && props.cart.products.length === 0) {
+  //   cart = (
+  //     <Wrapper>
+  //       <CartItemList>
+  //         <NoProduct>
+  //           <li className="no-product cart-item">
+  //             <h2>There are no products in your Cart.</h2>
+  //           </li>
+  //         </NoProduct>
+  //       </CartItemList>
+  //     </Wrapper>
+  //   );
+  // }
 
-  if (!props.loading && props.cart.products.length >= 1) {
-    cart = (
-      <React.Fragment>
-        <CartItemList>
-          {props.cart.products.map((product) => {
-            return (
-              <CartItem
-                key={product.productId._id}
-                productId={product.productId}
-                quantity={product.quantity}
-                onDelete={onRemoveProduct}
-              ></CartItem>
-            );
-          })}
-        </CartItemList>
-        <NavLink to="/checkout" className="cart-btn">
-          Order Now!
-        </NavLink>
-      </React.Fragment>
-    );
-  }
+  // if (!props.loading && props.cart.products.length >= 1) {
+  //   cart = (
+  //     <React.Fragment>
+  //       <CartItemList>
+  //         {props.cart.products.map((product) => {
+  //           return (
+  //             <CartItem
+  //               key={product.productId._id}
+  //               productId={product.productId}
+  //               quantity={product.quantity}
+  //               onDelete={onRemoveProduct}
+  //             ></CartItem>
+  //           );
+  //         })}
+  //       </CartItemList>
+  //       <NavLink to="/checkout" className="cart-btn">
+  //         Order Now!
+  //       </NavLink>
+  //     </React.Fragment>
+  //   );
+  // }
 
   return <Cart>{cart}</Cart>;
 };
