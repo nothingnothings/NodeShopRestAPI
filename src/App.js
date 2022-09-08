@@ -16,6 +16,7 @@ import OrdersPage from '../src/pages/Orders/Orders';
 import AdminShop from './pages/Admin-Shop/AdminShop';
 import ProductEditor from './pages/ProductEditor/ProductEditor';
 import ProductDetail from './pages/Product-Detail/ProductDetail';
+import ScrollToTop from './hoc/ScrollToTop/ScrollToTop';
 
 const App = (props) => {
   useEffect(() => {
@@ -33,7 +34,6 @@ const App = (props) => {
     </Routes>
   );
 
-  
   if (props.token) {
     routes = (
       <Routes>
@@ -53,6 +53,7 @@ const App = (props) => {
 
   return (
     <BrowserRouter basename="/NodeShopRestAPI">
+      <ScrollToTop/>
       <div>
         <Layout>
           <Suspense fallback={Spinner}>{routes}</Suspense>
