@@ -269,7 +269,7 @@ The development environment (with the use of the `create-react-app` tool/workflo
 ```
 
 
-The `create-react-app` workflow's production output, as shown in the gh-pages branch (tasked with the deployment of the app):
+The `create-react-app` workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
 
 
 ```
