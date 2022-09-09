@@ -14,7 +14,7 @@ The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, a
  - HTML5 
  - CSS3 (animations, Flexbox, media queries)
  - ReactJS (JavaScript Library, app built entirely of React components)
- - React-Router-DOM (for the navigation between the different "pages" of the app)
+ - React Router (for the navigation between the different "pages" of the app)
  - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
  - BootStrap (mainly for parts of the Footer component)
  - Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
@@ -400,7 +400,7 @@ To use this project, clone it using Git:
 - Usage of GitHub Actions and GitHub Pages with the `create-react-app` utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/NodeShopRestAPI/.
 - Working "Shopping Cart" feature (with interactive "number of items" icon), implemented with `react-redux`
 - Form validation logic, powered by ReactJS's state management, in the "Get Started" page
-- Page redirection, made possible by the usage of React-Router-DOM
+- Page redirection, made possible by the usage of React Router
 - Usage of Axios for communication with the Node.js (Express.js) backend, for the storage and management of "User", "Product", "Order" and "Cart" objects; also for the authentication logic (login/signup) implemented on the app
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
 - 
