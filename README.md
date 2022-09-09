@@ -23,7 +23,6 @@ The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, a
  - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
  
  
- 
 ## Project Directory Structure
 
 The development environment (with the use of the `create-react-app` tool/workflow):
@@ -405,6 +404,7 @@ To use this project, clone it using Git:
 - Page redirection, made possible by the usage of React Router
 - Usage of Axios for communication with the Node.js (Express.js) backend, for the storage and management of "User", "Product", "Order" and "Cart" objects on a MongoDB database (MongoDB Atlas service); also for the authentication logic (login/signup) implemented on the app
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
+- Animated custom "Loading..." Spinner
 
 
 ## Inspiration
