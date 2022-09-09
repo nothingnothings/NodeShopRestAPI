@@ -402,7 +402,7 @@ To use this project, clone it using Git:
 - Form validation logic, powered by ReactJS's state management, in the "Get Started" page
 - Page redirection, made possible by the usage of React-Router-DOM
 - Usage of Axios for communication with the Node.js (Express.js) backend, for the storage and management of "User", "Product", "Order" and "Cart" objects; also for the authentication logic (login/signup) implemented on the app
-- Dummy representation of the possible integration of shop apps with stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
+- Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
 - 
 
 
