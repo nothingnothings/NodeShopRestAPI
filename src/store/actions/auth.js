@@ -92,7 +92,8 @@ export const authAttempt = (
         dispatch(checkAuthTimeout(expiresIn));
       })
       .catch((error) => {
-        dispatch(authFail(error.response.data.error));
+        console.log(error);
+        dispatch(authFail(error.response.data.message));
       });
   };
 };

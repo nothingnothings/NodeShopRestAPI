@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 
 import * as authActionTypes from '../../store/actions/auth';
@@ -17,6 +17,7 @@ import './Auth.css';
 
 const Auth = (props) => {
   const [isSignup, setIsSignup] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const [controls, setControls] = useState({
     email: {
@@ -64,6 +65,60 @@ const Auth = (props) => {
     },
   });
 
+  useEffect(() => {
+    if (props.error) {
+      setShowError(true);
+      setControls({
+        email: {
+          inputType: 'input',
+          elementConfig: {
+            type: 'email',
+            placeholder: 'exemplo@exemplo',
+          },
+          value: '',
+          validation: {
+            required: true,
+            isEmail: true,
+          },
+          valid: false,
+          touched: false,
+        },
+
+        password: {
+          inputType: 'input',
+          elementConfig: {
+            type: 'password',
+            placeholder: 'exemplo',
+          },
+          value: '',
+          validation: {
+            required: true,
+          },
+          valid: false,
+          touched: false,
+        },
+        confirm: {
+          inputType: 'input',
+          elementConfig: {
+            type: 'password',
+            placeholder: 'exemplo',
+          },
+          value: '',
+          validation: {
+            required: true,
+            isEqualToPassword: true,
+          },
+          valid: false,
+          touched: false,
+          isNeeded: false,
+        },
+      });
+      setTimeout(() => {
+        setShowError(false);
+      }, 3000);
+    }
+  }, [props.error]);
+
   const authSwitchHandler = () => {
     setIsSignup(!isSignup);
     const updatedControls = updateObject(controls, {
@@ -96,23 +151,24 @@ const Auth = (props) => {
     event.preventDefault();
 
     const email = controls.email.value;
-
     const password = controls.password.value;
-
     const confirmPassword = controls.confirm.value;
 
     if (isSignup) {
-
       return disclaimerBox();
     }
 
     props.onAuthAttempt(email, password, confirmPassword, isSignup);
   };
 
-  let errorMessage = false;
+  let errorMessage;
 
-  if (props.errorMessage) {
-    errorMessage = props.errorMessage;
+  if (props.error) {
+    errorMessage = (
+      <div style={{ textAlign: 'center' }}>
+        Entered credentials are invalid, please try again.
+      </div>
+    );
   }
 
   let controlElementsArray = [];
@@ -139,9 +195,7 @@ const Auth = (props) => {
               productStyle={{ backgroundColor: 'var(--lightest-green)' }}
             >
               <li className="no-product cart-item">
-                <div className="user-message user-message--error">
-                  {errorMessage}
-                </div>
+                <div className="user-message user-message--error"></div>
 
                 <form onSubmit={formSubmitHandler} className="login-form">
                   {controlElementsArray.map((controlElement) => {
@@ -215,6 +269,7 @@ const Auth = (props) => {
           </CartItemList>
         </Wrapper>
       </Cart>
+      {showError ? errorMessage : null}
     </React.Fragment>
   ) : (
     <Grid>
