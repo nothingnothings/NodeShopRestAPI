@@ -41,7 +41,7 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  - ReactJS (JavaScript Library, app built entirely of React components)
  - React Router (for the navigation between the different "pages" of the app)
  - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
- - BootStrap (mainly for parts of the Footer component)
+ - Bootstrap (mainly for parts of the Footer component)
  - Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
  - Responsive mobile design (sidebar, Flexbox, media queries)
  - Font Awesome
