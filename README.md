@@ -1,3 +1,11 @@
+<h1 align="center">NodeShop - A Node.js-inspired online shop, built with ReactJS.</h1>
+<p align="center">
+  <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
+  <br>
+  <i>This website is an example/demonstration of the kind of online shop that can be built 
+    <br>with the ReactJS library and a Node.js Backend</i>
+  <br>
+</p>
 ![NodeShop](/snapshot/NodeShop1.png)
 
 # NodeShop - REST API Version
