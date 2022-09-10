@@ -403,8 +403,6 @@ The package.json file used in the project:
 }
 ```
 
-
-
 ## Setup 
 
 
@@ -420,6 +418,8 @@ To use this project, clone it using Git:
 ## Features 
 
 - Single-Page Application, no page reloads, single HTML file (ReactJS)
+- Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
+- Hexagon-inspired design, created with CSS
 - CSS-animated SVG logo on landing page
 - Responsive design (adaptive, mobile and desktop support) created with Flexbox and media queries
 - Usage of GitHub Actions and GitHub Pages with the `create-react-app` utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/NodeShopRestAPI/.
