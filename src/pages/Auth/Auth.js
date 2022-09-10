@@ -24,7 +24,7 @@ const Auth = (props) => {
       inputType: 'input',
       elementConfig: {
         type: 'email',
-        placeholder: 'exemplo@exemplo',
+        placeholder: 'exemplo@exemplo.com',
       },
       value: '',
       validation: {
@@ -73,7 +73,7 @@ const Auth = (props) => {
           inputType: 'input',
           elementConfig: {
             type: 'email',
-            placeholder: 'exemplo@exemplo',
+            placeholder: 'exemplo@exemplo.com',
           },
           value: '',
           validation: {
