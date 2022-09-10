@@ -6,7 +6,14 @@
     <br>with the ReactJS library, coupled with a Node.js Backend.</i>
   <br>
 </p>
-![NodeShop](/snapshot/NodeShop1.png)
+
+<p align="center">
+  <a href="https://nothingnothings.github.io/NodeShopRestAPI"><strong>https://nothingnothings.github.io/NodeShopRestAPI</strong></a>
+  <br>
+</p>
+
+
+
 
 # NodeShop - REST API Version
 
