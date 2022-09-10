@@ -1,4 +1,4 @@
-![NodeShop](/src/assets/images/ArtGarage.png)
+![NodeShop](/snapshot/NodeShop1.png)
 
 # NodeShop - REST API Version
 
