@@ -99,7 +99,6 @@
 
 .cart-link.active {
   background: transparent;
-  /* color: var(--highlight-yellow); */
   color: var(--lightest-green);
 }
 .mobile-nav__item:hover {
