@@ -70,7 +70,7 @@ const Checkout = (props) => {
             );
           })}
         </CartItemList>
-        <div className="cart-item__results">
+        <div className="cart-results">
           <h2>Total:</h2>
           <h2>US$ {props.cart.totalPrice.toFixed(2)}</h2>
           <StripeCheckout
