@@ -153,3 +153,10 @@
   outline: none;
   border: none;
 }
+
+
+@media (max-width: 140px) {
+  .mobile-nav__item a {
+    font-size: 1.4rem;
+  }
+}

@@ -139,9 +139,22 @@
   cursor: default;
 }
 
+@media (max-width: 420px) {
+  .btn.danger {
+    padding: 0.4rem 0.3rem;
+  }
+}
+
 @media (max-width: 279px) {
   .admin-button {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 242px) {
+  .btn.danger {
+    padding: 0.3rem 0.2rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -151,6 +164,24 @@
     padding: 1px;
   }
 }
+
+
+@media (max-width: 212px) {
+  .btn.danger {
+    padding: 0.3rem 0.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 180px) {
+  .btn.danger {
+    margin-top: 0.1rem;
+    padding: 0.3rem 0.1rem;
+    font-size: 0.65rem;
+  }
+}
+
 
 @media (max-width: 185px) {
   .admin-button {

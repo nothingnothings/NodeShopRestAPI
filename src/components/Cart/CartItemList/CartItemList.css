@@ -6,16 +6,9 @@
   align-items: center;
   justify-content: center;
   margin-right: 2.8rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.6rem;
   gap: 0.5rem;
-}
-
-
-
-@media (max-width: 400px) {
-  .cart__item-list {
-    margin-bottom: 10rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -29,4 +22,3 @@
     width: 100%;
   }
 }
-

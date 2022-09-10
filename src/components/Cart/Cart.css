@@ -11,3 +11,34 @@
   font-family: 'Lato';
   color: var(--white-highlight);
 }
+
+
+
+
+@media (max-width: 420px) {
+  .cart {
+    margin-top: 11rem;
+    margin-left: 0.2rem;
+  }
+}
+
+
+@media (max-width: 240px) {
+  .cart {
+    margin-top: 12rem;
+  }
+}
+
+
+@media (max-width: 210px) {
+  .cart {
+    margin-top: 12.5rem;
+  }
+}
+
+
+@media (max-width: 180px) {
+  .cart {
+    margin-top: 13.5rem;
+  }
+}
