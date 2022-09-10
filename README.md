@@ -3,7 +3,7 @@
   <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
   <i>This website is an example/demonstration of the sort of online shops that can be built 
-    <br>with the ReactJS library, coupled with a Node.js Backend.</i>
+    <br>with the ReactJS library, when coupled with a Node.js Backend.</i>
   <br>
 </p>
 
