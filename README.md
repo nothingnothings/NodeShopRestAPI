@@ -412,7 +412,7 @@ To use this project, clone it using Git:
 2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
 3. Run `npm run build` to create the production/deployment version of the app (outputted in `/build`)
 4. Serve the production files locally or on the web, with the help of a hosting provider (although great part of the app relies/depends on the backend's data, which in the case of this demo, is served by a Node.js (Express.js) server, hosted on Heroku)
-4a. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials "exemplo@exemplo.com" (email) and "exemplo" (password) to access the apps's various features
+5. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's various features
 
 
 ## Features 
