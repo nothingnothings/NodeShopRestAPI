@@ -410,8 +410,11 @@ The package.json file used in the project:
 
 To use this project, clone it using Git:
 
-
-
+1. Run `git clone` to clone the project into your local Git repository
+2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
+3. Run `npm run build` to create the production/deployment version of the app (outputted in `/build`)
+4. Serve the production files locally or on the web, with the help of a hosting provider (although great part of the app relies/depends on the backend's data, which in the case of this demo, is served by a Node.js (Express.js) server, hosted on Heroku)
+4a. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials "exemplo@exemplo.com" (email) and "exemplo" (password) to access the apps's various features
 
 
 ## Features 
@@ -424,7 +427,7 @@ To use this project, clone it using Git:
 - Working "Shopping Cart" feature (with interactive "number of items" icon, synchronized with the Redux state), implemented with `react-redux`
 - Form validation logic, powered by ReactJS's state management, in the "Get Started" page
 - Page redirection, made possible by the usage of React Router
-- Usage of Axios for communication with the Node.js (Express.js) backend, for the storage and management of "User", "Product", "Order" and "Cart" objects on a MongoDB database (MongoDB Atlas service); also for the authentication logic (login/signup) implemented on the app
+- Usage of Axios for communication with the Node.js (Express.js) backend, which manages the "User", "Product", "Order" and "Cart" objects, stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
 - Animated custom "Loading..." Spinner
 - Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
