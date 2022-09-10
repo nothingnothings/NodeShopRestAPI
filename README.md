@@ -26,7 +26,7 @@ Frontend Single Page Application (SPA) built with the ReactJS (create-react-app)
 
 The App was bootstrapped with `create-react-app` and deployed with `gh-pages`, assisted by the GitHub Actions feature.
 
-This app is also available as a "multi-page" app, without ReactJS. The project can be found [here](www.dummy.com)
+This app is also available as a "multi-page" app, without ReactJS. The project can be found [here](www.dummy.com).
  
 ## Technologies 
  
