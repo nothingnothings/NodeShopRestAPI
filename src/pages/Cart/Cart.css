@@ -43,7 +43,7 @@
   justify-content: center;
   align-items: center;
   color: var(--darkest);
-  outline: 3px solid var(--lightest-green);
+  box-shadow: 3px solid var(--lightest-green);
   height: 10rem;
   width: 25rem;
 }
@@ -51,6 +51,3 @@
 .cart-results h2 {
   text-align: center;
 }
-
-
-
