@@ -42,7 +42,7 @@
 
 .product__price {
   text-align: center;
-  outline: 2px var(--white-highlight) solid;
+  box-shadow: 2px var(--white-highlight) solid;
   background-color: var(--white-highlight);
   border-radius: 12px;
   opacity: 1;
