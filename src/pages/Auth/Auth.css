@@ -92,3 +92,19 @@ label {
     margin-left: 2.2rem;
   }
 }
+
+
+@media (max-width: 300px) {
+
+  .switch-link {
+    margin-left: 1.4rem;
+  }
+}
+
+
+@media (max-width: 280px) {
+
+  .switch-link {
+    margin-left: 0.8rem;
+  }
+}
