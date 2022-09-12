@@ -18,17 +18,6 @@
   }
 }
 
-@media (max-width: 240px) {
-  .cart {
-    margin-top: 12rem;
-  }
-}
-
-@media (max-width: 210px) {
-  .cart {
-    margin-top: 10.5rem;
-  }
-}
 
 @media (max-width: 180px) {
   .cart {
