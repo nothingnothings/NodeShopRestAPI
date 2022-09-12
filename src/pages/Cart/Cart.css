@@ -28,6 +28,10 @@
   touch-action: manipulation;
 }
 
+.filler {
+  color: 'var(--light-dark)';
+}
+
 .cart-btn:hover {
   background-color: var(--lightest-green);
   text-decoration: none;
@@ -50,4 +54,11 @@
 
 .cart-results h2 {
   text-align: center;
+}
+
+
+@media( min-width: 1116px) {
+  .filler {
+    display: none;
+  }
 }
