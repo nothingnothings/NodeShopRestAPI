@@ -29,7 +29,7 @@
 }
 
 .filler {
-  color: 'var(--light-dark)';
+  color: var(--light-dark) !important;
 }
 
 .cart-btn:hover {
@@ -57,7 +57,7 @@
 }
 
 
-@media( min-width: 1116px) {
+@media(min-width: 1116px) {
   .filler {
     display: none;
   }
