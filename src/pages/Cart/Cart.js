@@ -38,7 +38,13 @@ const CartPage = (props) => {
         <CartItemList>
           <NoProduct>
             <li className="no-product cart-item">
+              <h2 style={{ color: 'var(--light-dark)' }}>
+                There are no products in your Cart.
+              </h2>
               <h2>There are no products in your Cart.</h2>
+              <h2 style={{ color: 'var(--light-dark)' }}>
+                There are no products in your Cart.
+              </h2>
             </li>
           </NoProduct>
         </CartItemList>
