@@ -18,4 +18,9 @@
   }
 }
 
-
+@media (max-height: 900px) {
+  .cart {
+    margin-left: 0.2rem;
+    margin-top: 8rem;
+  }
+}
