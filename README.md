@@ -42,8 +42,7 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  - React Router (for the navigation between the different "pages" of the app)
  - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
  - Bootstrap (mainly for parts of the Footer component)
- - Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
- - Responsive mobile design (sidebar, Flexbox, media queries)
+ - MongoDB (noSQL database storage solution; storage of `user`, `product` and `order` objects into collections in a remote MongoDB Atlas database)
  - Font Awesome
  - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
  
@@ -424,6 +423,7 @@ To use this project, clone it using Git:
 - Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
 - Hexagon-inspired design, created with CSS
 - CSS-animated SVG logo on landing page
+- Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
 - Responsive design (adaptive, mobile and desktop support) created with Flexbox and media queries
 - Usage of GitHub Actions and GitHub Pages with the `create-react-app` utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/NodeShopRestAPI/.
 - For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials `exemplo@exemplo.com` (email field) and `exemplo` (password field). Creation of additional users ("No account? Join NodeShop") is possible in the complete app (in this demo app, the account creation endpoints are disabled). Furthermore, the "Orders" made by the user are reset every 60 minutes (MongoDB Time to Live Index feature), and the products added to the "Cart", every 8 hours (MongoDB "Scheduled Trigger" feature)
