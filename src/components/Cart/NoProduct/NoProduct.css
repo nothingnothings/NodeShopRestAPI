@@ -26,3 +26,18 @@
     width: 19rem;
   }
 }
+
+
+
+
+@media (max-width: 300px) {
+  .no-product {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .no-product {
+    width: 15rem;
+  }
+}
