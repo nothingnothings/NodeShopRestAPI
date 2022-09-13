@@ -436,6 +436,7 @@ To use this project, clone it using Git:
 - Animated custom "Loading..." Spinner
 - Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
 - Font Awesome and Bootstrap usage (in the Footer component)
+- Custom favicon, compatible with multiple devices
 
 
 ## Inspiration
