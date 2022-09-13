@@ -435,6 +435,7 @@ To use this project, clone it using Git:
 - Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
 - Animated custom "Loading..." Spinner
 - Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
+- Font Awesome and Bootstrap usage (on Footer component)
 
 
 ## Inspiration
