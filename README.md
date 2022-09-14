@@ -35,7 +35,7 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  
  Some of the Languages and Libraries employed:
  
- - Node Package Manager (for bootstrapping and managing the React App)
+ - Node Package Manager (for bootstrapping and managing the React app)
  - HTML5 
  - CSS3 (animations, Flexbox, media queries)
  - ReactJS (JavaScript Library, app built entirely of React components)
