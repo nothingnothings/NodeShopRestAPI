@@ -12,9 +12,6 @@
   <br>
 </p>
 
-
-
-
 ## Introduction
 
 ![NodeShop](snapshot/NodeShop1.png)
