@@ -47,6 +47,7 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
  - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
  
  
+ 
 ## Project Directory Structure
 
 The development environment (with the use of the `create-react-app` tool/workflow):
