@@ -35,7 +35,7 @@ O backend do app, como o nome sugere, utiliza Node.js (com o framework Express.j
  
 ## Tecnologias
  
- Some of the Languages and Libraries employed:
+ Algumas das linguagens e libraries empregadas:
  
  - Node Package Manager (para inicializar e gerenciar o app React)
  - HTML5 (JSX)
@@ -297,7 +297,7 @@ O ambiente de desenvolvimento (com o uso da ferramenta/workflow `create-react-ap
 ```
 
 
-A output do workflow `create-react-app`, conforme o visto na branch `gh-pages` (responsável pela implantação do app):
+O output do workflow `create-react-app`, conforme o visto na branch `gh-pages` (responsável pela implantação do app):
 
 
 ```
