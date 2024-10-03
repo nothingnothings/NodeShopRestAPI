@@ -1,9 +1,9 @@
-<h1 align="center">NodeShop - A Node.js-inspired online shop, built with ReactJS</h1>
+<h1 align="center">NodeShop - Uma loja online inspirada em Node.js, construída com ReactJS</h1>
 <p align="center">
   <img src="public/logo512.png" alt="NodeShop-logo" width="120px" height="120px"/>
   <br>
-  <i>This website is an example/demonstration of the sort of online shops that can be built 
-    <br>with the ReactJS library, when coupled with a Node.js Backend.</i>
+  <i>Este site é um exemplo/demonstração do tipo de lojas online que podem ser construídas 
+    <br>com a biblioteca ReactJS, quando acoplada a um Backend Node.js.</i>
   <br>
 </p>
 
@@ -19,12 +19,13 @@
 
 ![NodeShop](snapshot/NodeShop2.png)
 
-Frontend Single Page Application (SPA) built with the ReactJS (create-react-app) library. The site's design, hexagon-inspired, was based on [Node.js's logo](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). Flexbox and media queries were used for the responsive design (attempting to cater to multiple device types, both desktop and mobile, with different resolutions). As per React's latest versions, the app was made out of functional components, moving away from the class-based ("`class App extends React.Component{}`") component approach used in the past. 
+Aplicação Frontend de Página Única (SPA) construída com a biblioteca ReactJS (create-react-app). O design do site, inspirado em hexágonos, foi baseado no [logo do Node.js](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg). Flexbox e media queries foram utilizados para o design responsivo (tentando atender a múltiplos tipos de dispositivos, tanto desktop quanto mobile, com diferentes resoluções). De acordo com as últimas versões do React, o app foi feito a partir de componentes funcionais, afastando-se da abordagem baseada em classes ("`class App extends React.Component{}`") usada no passado.
 
-The App was bootstrapped with `create-react-app` and deployed with GitHub Pages, assisted by the GitHub Actions feature.
-This app is also available as a "multi-page" app, without ReactJS. The project can be found [here](https://nodeshop-br-ejs.herokuapp.com/).
 
-The backend of the app, as its name suggests, utilizes Node.js (with the Express.js framework) and is hosted on the Heroku platform. The serverside code can be found [here](https://github.com/nothingnothings/NodeShopRestAPIBackend).
+O App foi inicializado com `create-react-app` e implantado com o GitHub Pages, assistido pela funcionalidade GitHub Actions. Este app também está disponível como um app "multi-página", sem ReactJS. O projeto pode ser encontrado [aqui](https://nodeshop-br-ejs.herokuapp.com/).
+
+O backend do app, como o nome sugere, utiliza Node.js (com o framework Express.js) e está hospedado na plataforma Heroku. O código do lado do servidor pode ser encontrado [aqui](https://github.com/nothingnothings/NodeShopRestAPIBackend).
+
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/NodeShopRestAPI/master?style=flat-square)
 [![en](https://img.shields.io/badge/lang-en-red.svg?style=flat-square)](https://github.com/nothingnothings/NodeShopRestAPI)
@@ -32,26 +33,27 @@ The backend of the app, as its name suggests, utilizes Node.js (with the Express
 
 
  
-## Technologies 
+## Tecnologias
  
  Some of the Languages and Libraries employed:
  
- - Node Package Manager (for bootstrapping and managing the React app)
+ - Node Package Manager (para inicializar e gerenciar o app React)
  - HTML5 (JSX)
- - CSS3 (animations, Flexbox, media queries)
- - ReactJS (JavaScript Library, app built entirely of React components)
- - React Router (for the navigation between the different "pages" of the app)
- - React Redux approach for managing state (global state split between 4 reducers: `auth`, `orders`, `cart` and `shop`)
- - Bootstrap (mainly for parts of the Footer component)
- - MongoDB (noSQL database storage solution; storage of `user`, `product` and `order` objects into collections in a remote MongoDB Atlas database)
+ - CSS3 (animações, Flexbox, media queries)
+ - ReactJS (Biblioteca JavaScript, app construído inteiramente com componentes React)
+ - React Router (para a navegação entre as diferentes "páginas" do app)
+ - Abordagem React Redux para gerenciamento de estado (estado global dividido entre 4 reducers: `auth`, `orders`, `cart` e `shop`)
+ - Bootstrap (principalmente para partes do componente Footer)
+ - MongoDB (solução de armazenamento de banco de dados noSQL; armazenamento de objetos `user`, `product` e `order` em coleções em um banco de dados MongoDB Atlas remoto)
  - Font Awesome
- - Axios (for the communication, requests and responses, between the frontend app and the Node.js/express.js backend targeted by it)
- 
- 
- 
-## Project Directory Structure
+ - Axios (para a comunicação, requisições e respostas, entre o app frontend e o backend Node.js/express.js que ele visa)
 
-The development environment (with the use of the `create-react-app` tool/workflow):
+ 
+ 
+ 
+## Estrutura de Diretórios do Projeto
+
+O ambiente de desenvolvimento (com o uso da ferramenta/workflow `create-react-app`):
 
 
 ```
@@ -295,7 +297,7 @@ The development environment (with the use of the `create-react-app` tool/workflo
 ```
 
 
-The `create-react-app` workflow's production output, as shown in the `gh-pages` branch (tasked with the deployment of the app):
+A output do workflow `create-react-app`, conforme o visto na branch `gh-pages` (responsável pela implantação do app):
 
 
 ```
@@ -343,9 +345,9 @@ The `create-react-app` workflow's production output, as shown in the `gh-pages` 
 
 
 
-## Project Configuration Files (package.json)
+## Arquivos de Configuração do Projeto (package.json)
 
-The package.json file used in the project:
+O arquivo package.json usado no projeto:
 
 ```
 {
@@ -407,40 +409,41 @@ The package.json file used in the project:
 }
 ```
 
-## Setup 
+## Configuração
 
 
-To use this project, clone it using Git:
-
-1. Run `git clone` to clone the project into your local Git repository
-2. Run `npm install` to install all dependencies (`react`, `axios`, etc)
-3. Run `npm run build` to create the production/deployment version of the app (outputted in `/build`)
-4. Serve the production files locally or on the web, with the help of a hosting provider (although great part of the app relies/depends on the backend's data, which in the case of this demo, is served by a Node.js (Express.js) server, hosted on Heroku)
-5. For the purposes of this demo, on the "Get Started" (Authentication) page, input the credentials `exemplo@exemplo.com` (email) and `exemplo` (password) to access the apps's various features
+Para usar este projeto, clone-o usando o Git:
 
 
-## Features 
-
-- Single-Page Application, no page reloads, single HTML file (ReactJS)
-- Application divided into many components, of which some are used more than a single time, on different pages (ReactJS design philosophy)
-- Hexagon-inspired design, created with CSS
-- CSS-animated SVG logo on landing page
-- Form validation logic using the `useState` Hook, as seen in the 'Get Started' and 'Add a Product' pages.
-- Responsive design (adaptive, mobile and desktop support) created with Flexbox and media queries
-- Usage of GitHub Actions and GitHub Pages with the `create-react-app` utility for a seamless workflow (transition from development stage to production/deployment stage). Upon the git push command, GitHub Actions transfers the contents of the master branch into the gh-pages branch, which then deploys the app at https://nothingnothings.github.io/NodeShopRestAPI/.
-- For deployment demonstration purposes, only a single user is enabled/created on the serverside, with the credentials `exemplo@exemplo.com` (email field) and `exemplo` (password field). Creation of additional users ("No account? Join NodeShop") is possible in the complete app (in this demo app, the account creation endpoints are disabled). Furthermore, the "Orders" made by the user are reset every 60 minutes (MongoDB Time to Live Index feature), and the products added to the "Cart", every 8 hours (MongoDB "Scheduled Trigger" feature)
-- Working "Shopping Cart" feature ("Add" and "Remove" products feature, with interactive "number of items" icon, synchronized with the global Redux state), implemented with `react-redux`
-- Form validation logic, powered by ReactJS's state management, in the "Get Started" page
-- Simple pagination logic for the list of products
-- Page redirection, made possible by the usage of React Router
-- Usage of Axios for communication with the Node.js (Express.js) backend, which manages the "User", "Product", "Order" and "Cart" objects, stored on a MongoDB database (MongoDB Atlas service); the Node.js server and MongoDB database also handle the authentication logic (login/signup) implemented on the app
-- Dummy representation of the possible integration of shop apps with Stripe, with the `react-stripe-checkout` package and corresponding serverside logic producing effects on the frontend (page redirection and visual update of "orders" page)
-- Animated custom "Loading..." Spinner
-- Viewing of each order's invoices/faturas in .pdf files, produced by the backend (`pdfkit` package)
-- Font Awesome and Bootstrap usage (in the Footer component)
-- Custom favicon, compatible with multiple devices
+1. Execute `git clone` para clonar o projeto em seu repositório local do Git.
+2. Execute `npm install` para instalar todas as dependências (react, axios, etc.).
+3. Execute `npm run build` para criar a versão de produção/implantação do app (output em `/build`).
+4. Sirva os arquivos de produção localmente ou na web, com a ajuda de um provedor de hospedagem (embora grande parte do app dependa dos dados do backend, que neste caso da demonstração, é servido por um servidor Node.js (Express.js), hospedado no Heroku).
+5. Para fins desta demonstração, na página "Get Started" (Autenticação), insira as credenciais `exemplo@exemplo.com` (email) and `exemplo` (password) para acessar os diversos recursos do app.
 
 
-## Inspiration
+## Funcionalidades
 
-This app was based on the applications seen on the "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" and "React - The Complete Guide (incl Hooks, React Router, Redux)" courses by Maximilian Schwarzmüller.
+- Aplicativo de Página Única, sem recarregamentos de página, um único arquivo HTML (ReactJS).
+- Aplicativo dividido em muitos componentes, dos quais alguns são usados mais de uma vez, em diferentes páginas (filosofia de design do ReactJS).
+- Design inspirado em hexágonos, criado com CSS.
+- Logo SVG animado em CSS na página inicial.
+- Lógica de validação de formulários usando o Hook `useState`, conforme visto nas páginas "Get Started" e "Add a Product".
+- Design responsivo (adaptável, suporte a dispositivos móveis e desktop) criado com Flexbox e media queries.
+- Uso de GitHub Actions e GitHub Pages com a ferramenta `create-react-app` para um fluxo de trabalho contínuo (transição da fase de desenvolvimento para a fase de produção/implantação). Ao executar o comando git push, o GitHub Actions transfere o conteúdo da branch master para a branch gh-pages, que então implanta o app em https://nothingnothings.github.io/NodeShopRestAPI/.
+- Para fins de demonstração da implantação, apenas um único usuário é habilitado/criado no lado do servidor, com as credenciais `exemplo@exemplo.com` (campo de e-mail) e `exemplo` (campo de senha). A criação de usuários adicionais ("No account? Join NodeShop") é possível no app completo (neste app de demonstração, os endpoints de criação de contas estão desativados). Além disso, os "Pedidos" feitos pelo usuário são redefinidos a cada 60 minutos (recurso de Time to Live Index do MongoDB), e os produtos adicionados ao "Carrinho" a cada 8 horas (recurso "Scheduled Trigger" do MongoDB).
+- Funcionalidade de "Carrinho de Compras" ("Adicionar" e "Remover" produtos, com ícone interativo "número de itens", sincronizado com o estado global do Redux), implementada com `react-redux`.
+- Lógica de validação de formulários, implementada pela gestão de estado do ReactJS, na página "Get Started".
+- Lógica de paginação simples para a lista de produtos.
+- Redirecionamento de página, possibilitado pelo uso do React Router.
+- Uso de Axios para comunicação com o backend Node.js (Express.js), que gerencia os objetos "Usuário", "Produto", "Pedido" e "Carrinho", armazenados em um banco de dados MongoDB (serviço MongoDB Atlas); o servidor Node.js e o banco de dados MongoDB também lidam com a lógica de autenticação (login/cadastro) implementada no app.
+- Representação fictícia da possível integração de apps de lojas com Stripe, com o pacote `react-stripe-checkout` e lógica correspondente no lado do servidor, produzindo efeitos na interface do usuário (redirecionamento de página e atualização visual da página de "pedidos").
+- Spinner "Loading..." personalizado e animado.
+- Visualização das faturas de cada pedido em arquivos .pdf, produzidos pelo backend (pacote `pdfkit`).
+- Uso do Font Awesome e Bootstrap (no componente Footer).
+- Favicon personalizado, compatível com vários dispositivos.
+
+
+## Inspiração
+
+Este app foi baseado nas aplicações vistas nos cursos "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" e "React - The Complete Guide (incl Hooks, React Router, Redux)" de Maximilian Schwarzmüller.
