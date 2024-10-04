@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://nodeshop-br.herokuapp.com/',
+  baseURL: 'nodeshoprestapibackend-production.up.railway.app',
 });
 
 export default instance;
