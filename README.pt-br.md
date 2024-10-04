@@ -24,7 +24,7 @@ Aplicação Frontend de Página Única (SPA) construída com a biblioteca ReactJ
 
 O App foi inicializado com `create-react-app` e implantado com o GitHub Pages, assistido pela funcionalidade GitHub Actions. Este app também está disponível como um app "multi-página", sem ReactJS. O projeto pode ser encontrado [aqui](https://nodeshop-br-ejs.herokuapp.com/).
 
-O backend do app, como o nome sugere, utiliza Node.js (com o framework Express.js) e está hospedado na plataforma Heroku. O código do lado do servidor pode ser encontrado [aqui](https://github.com/nothingnothings/NodeShopRestAPIBackend).
+O backend do app, como o nome sugere, utiliza Node.js (com o framework Express.js) e está hospedado na plataforma Railway. O código do lado do servidor pode ser encontrado [aqui](https://github.com/nothingnothings/NodeShopRestAPIBackend).
 
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nothingnothings/NodeShopRestAPI/master?style=flat-square)
@@ -418,7 +418,7 @@ Para usar este projeto, clone-o usando o Git:
 1. Execute `git clone` para clonar o projeto em seu repositório local do Git.
 2. Execute `npm install` para instalar todas as dependências (react, axios, etc.).
 3. Execute `npm run build` para criar a versão de produção/implantação do app (output em `/build`).
-4. Sirva os arquivos de produção localmente ou na web, com a ajuda de um provedor de hospedagem (embora grande parte do app dependa dos dados do backend, que neste caso da demonstração, é servido por um servidor Node.js (Express.js), hospedado no Heroku).
+4. Sirva os arquivos de produção localmente ou na web, com a ajuda de um provedor de hospedagem (embora grande parte do app dependa dos dados do backend, que neste caso da demonstração, é servido por um servidor Node.js (Express.js), hospedado no Railway).
 5. Para fins desta demonstração, na página "Get Started" (Autenticação), insira as credenciais `exemplo@exemplo.com` (email) and `exemplo` (password) para acessar os diversos recursos do app.
 
 
